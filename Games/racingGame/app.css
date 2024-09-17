@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(-45deg,#d4bfff, #a3cfff, #a3ffc8, #ffddc1, #ffefd5);
+    background-size: 400%;
+    animation: gradientBG 12s ease infinitel
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#container {
+    position: relative;
+    top: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Title Styling */
+#title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+#title:hover {
+    transform: scale(1.1);
+}
+
+/* Board Styling */
+#board {
+    width: 400px;
+    height: 400px;
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+/* hr {
+    width: 500px;
+} */
+
+/* #board {
+    
+    width: 400px;
+    height: 400px;
+    
+
+    background-color: #cdc1b5;
+    border: 6px solid#bbada0;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+} */
+
+/* #highscore{
+    width: auto;
+    height: auto;
+    background-color: white;
+    border: 1.em;
+    margin: 0 auto;
+    display: flex;
+    align-content:baseline;
+} */
+
+.tile {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #bbada0;
+
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x2 {
+    background-color: #c8a6f4;
+    color: white;
+}
+
+.x4 {
+    background-color: #af93f6;
+    color: white;
+}
+
+.x8 {
+    background-color: #a384f1;
+    color: white;
+}
+.x16 {
+    background-color: #9d7af4;
+    color: white;
+}
+.x32 {
+    background-color: #9068f3;
+    color: white;
+}
+.x64 {
+    background-color: #8054ee;
+    color: white;
+}
+.x128 {
+    background-color: #6c38ef;
+    color: white;
+}
+.x256 {
+    background-color: #5a1ef0;
+    color: white;
+}
+.x512 {
+    background-color: #3601bd;
+    color: white;
+}
+.x1024 {
+    background-color: #21036e;
+    color: white;
+}
+.x2048 {
+    background-color: #12003f;
+    color: white;
+}
+
+#restart {
+    background-color: #5a1ef0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#restart:hover {
+    background-color: #4a0072;
+    transform: scale(1.05);
+}
